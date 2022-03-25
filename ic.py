@@ -1,4 +1,5 @@
 import numpy as np
+import shutil
 from pymatgen.io.vasp.inputs import Kpoints
 from pymatgen.io.vasp.sets import MPHSERelaxSet, MPRelaxSet, MPStaticSet
 from pymatgen.ext.matproj import MPRester
