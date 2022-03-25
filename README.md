@@ -28,3 +28,9 @@ from pymatgen.io.vasp.sets import MPHSERelaxSet, MPRelaxSet, MPStaticSet
 
 **Module dependencies**
 ![Modules_v1](modules_v1.png)
+
+## Goal-3: Storing the output to a database
+
+**Steps towards the goal completion**
+
+1. 
