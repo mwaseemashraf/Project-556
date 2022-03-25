@@ -5,10 +5,11 @@ In this project simple VASP workflows will be created.
 
 1. Identify all the inputs to a optimizeFW for VASP
 There are four inputs requireed for the VASP
-..* KPOINTS
-..* INCAR
-..* POSCAR
-..* POTCAR
+* Structure (User)
+* KPOINTS   (Pymatgen)
+* INCAR     (Pymatgen)
+* POSCAR    (Pymatgen)
+* POTCAR    (From VASP library of POTCARS)
 2. Identify and code the Pymatgen inputs
 ``` python
 from pymatgen.io.vasp.inputs import Kpoints
