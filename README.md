@@ -19,8 +19,11 @@ from pymatgen.io.vasp.sets import MPHSERelaxSet, MPRelaxSet, MPStaticSet
 ```
 3. Identify and code the user inputs
 
-## Making the code modular
+## Goal-2:Making the code modular
 
 **Steps towards the goal completion**
 
-1.Develope the code structure in the following format
+1. Develope the code structure in the following format
+2. Rerun the previously coded calculation in new framework
+
+**Module dependencies**
