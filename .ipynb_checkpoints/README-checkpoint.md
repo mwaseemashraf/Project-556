@@ -28,3 +28,10 @@ from pymatgen.io.vasp.sets import MPHSERelaxSet, MPRelaxSet, MPStaticSet
 
 **Module dependencies**
 ![Modules_v1](modules_v1.png)
+
+## Goal-3: Storing the output to a database
+
+**Steps towards the goal completion**
+
+1. Modify output handler to use pymongo.
+2. Need to write a code parser.

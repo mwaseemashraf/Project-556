@@ -33,4 +33,5 @@ from pymatgen.io.vasp.sets import MPHSERelaxSet, MPRelaxSet, MPStaticSet
 
 **Steps towards the goal completion**
 
-1. 
+1. Modify output handler to use pymongo.
+2. Need to write a code parser.
