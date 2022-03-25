@@ -18,14 +18,16 @@ f.close()
 f=open("POSCAR",'w')
 f.write(str(vis.poscar))
 f.close()
-# Getting POTCAR files from the VASP library
-#F1="/fslhome/mwa32/fsl_groups/fslg_msg_vasp/potpaw_PBE"+"/"+vis.potcar_symbols[0]+"/"+"POTCAR"
-F1=vis.potcar_symbols[1]+"/"+"POTCAR"
-F2=vis.potcar_symbols[1]+"/"+"POTCAR"
-F3=vis.potcar_symbols[1]+"/"+"POTCAR"
-F4=vis.potcar_symbols[1]+"/"+"POTCAR"
+
+# Compiling POTCAR file from the VASP library
+
+VASP_POTCAR_PATH=""
 Des="POTCAR"
-with open(Des,"wb")as wfd:
-    for files in (F1,F2,F3,F4):
-        with open(files,"rb")as fd:
-            shutil.copyfileobj(fd,wfd)
+lis=[]
+for i in range(len(vis.potcar_symbols)):
+    #F=vis.potcar_symbols[i]
+    lis=lis+[VASP_POTCAR_PATH+vis.potcar_symbols[i]+"/"+"POTCAR"]
+    with open(Des,"wb")as wfd:
+        for files in lis:
+            with open(files,"rb")as fd:
+                shutil.copyfileobj(fd,wfd)
