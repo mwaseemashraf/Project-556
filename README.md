@@ -27,3 +27,4 @@ from pymatgen.io.vasp.sets import MPHSERelaxSet, MPRelaxSet, MPStaticSet
 2. Rerun the previously coded calculation in new framework
 
 **Module dependencies**
+![Modules_v1](modules_v1.png)
